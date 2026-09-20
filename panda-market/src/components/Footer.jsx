@@ -4,6 +4,7 @@ import twitter from '../assets/x.png'
 import youtube from '../assets/youtu.png'
 import instagram from '../assets/insta.png'
 
+// 정책 링크와 SNS 링크를 보여 주는 공통 푸터
 function Footer() {
   return (
     <footer className={styles.siteFooter}>

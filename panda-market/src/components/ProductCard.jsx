@@ -1,12 +1,13 @@
 import styles from './ProductCard.module.scss';
 
-function ProductCard() {
-  return(
+// 상품 한 개의 이미지, 이름, 가격, 좋아요 수를 보여 주는 카드
+function ProductCard({ product }) {
+  return (
     <div className={styles.card}>
-      <img src="https://static.mercdn.net/item/detail/orig/photos/m64126375987_1.jpg?1779991877" alt="상품 이미지" />
-      <p className={styles.name}>빈 병</p>
-      <p className={styles.price}>500원</p>
-      <p className={styles.likes}>♡ 240</p> 
+      <img src={product.images[0]} alt={product.name} />
+      <p className={styles.name}>{product.name}</p>
+      <p className={styles.price}>{product.price.toLocaleString()}원</p>
+      <p className={styles.likes}>♡ {product.favoriteCount}</p>
     </div>
   );
 }

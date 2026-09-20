@@ -1,6 +1,7 @@
 import styles from './Header.module.scss';
 import pandaLogo from '../assets/panda-logo.png';
 
+// 로고, 메뉴, 로그인 버튼을 보여 주는 상단 네비게이션
 function Header() {
   return (
   <header className={styles.header}>
